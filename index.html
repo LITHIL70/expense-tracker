@@ -36,14 +36,8 @@
             padding: 10px;
             display: flex;
             gap: 10px;
-            /* justify-content: space-between; */
-            flex-wrap: wrap;
+            justify-content: space-between;
             
-        }
-
-        .inputs > *{
-            flex: 1;
-            min-width: 200px;
         }
 
         .form-control, .form-select.tr-type{
@@ -51,7 +45,7 @@
         }
 
         .addbtn{
-            width: 60px;
+            width: 150px;
             height: 60px;
             border-radius: 50%;
             font-weight: bold;
@@ -64,10 +58,8 @@
             padding: 20px;
             margin: 10px;
             display: flex;
-            /* justify-content: space-between; */
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
+            
         }
 
         .card{
@@ -97,43 +89,6 @@
             align-items: center;
             justify-content: center;
         }
-
-
-        @media (max-width: 576px) {
-
-    .header {
-        margin: 5px;
-        padding: 15px;
-    }
-
-    .header h1 {
-        font-size: 25px;
-    }
-
-    .inputs {
-        flex-direction: column;
-    }
-
-    .inputs > * {
-        width: 100%;
-    }
-
-    .addbtn {
-        align-self: center;
-    }
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .card {
-        width: 100% !important;
-        max-width: 350px;
-    }
-}
-
 
     </style>
 </head>
@@ -204,7 +159,7 @@
         </div>
 
 
-        <div class="table-responsive">
+        <div class="table">
         
             <table class="table" id="table">
                 <thead>
