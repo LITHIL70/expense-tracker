@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN AIR WAYS</title>
+    <style>
+        form{
+            border-radius: 8;
+            background-color: bisque;
+            box-sizing: border-box;
+        }
+    </style>
+    
+</head>
+<body>
+    <H1> Flight Booking Form </H1>
+    <form action="/book-floight" method=post autocomplete="on" novalidate>
+        <legend>1. Passenger Details</legend>
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" maxlength="30" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Mobile Number*</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+        <label for="dob" >Date of Birth*</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender*</label>
+        <input  type="radio" id="gender" name="gender" value="Male"  required>Male
+        <input  type="radio" id="gender" name="gender" value="Female"required>Female
+        <input  type="radio" id="gender" name="gender" value="Other"required>Other<br><br>
+
+        <label for="no of passengers">No of Passengers*</label>
+        <input type="number" id="no of passengers" name="no of passengers" min="1" max="6" step="1" value="1" required>
+
+        <label for="nationality">Nationality*</label>
+        <select id="nationality" name="nationality" required>
+            <option value="">Select Nationality</option>
+            <option value="Indian">Indian</option>
+            <option value="American">American</option>
+            <option value="British">British</option>
+            <option value="Canadian">Canadian</option>
+            <option value="Australian">Australian</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <label for="frequent flyer">Frequent Flyer</label>
+        <input type="text"  id="frequent flyer" name="frequent flyer" readonly
+           value="ABC1234567890">
+
+        <label for="Discount code">Discount Code</label>
+        <input type="text" id="Discount code" name="Discount code" placeholder="Enter Code" disabled>
+        
+        <label for="special assistance">Need of Special Assistance?</label>
+        <input type="checkbox" id="special assistance" name="special assistance">Wheelchair<br>
+        <input type="checkbox" id="special assistance" name="special assistance">Visual Assistance<br>
+        <input type="checkbox" id="special assistance" name="special assistance">Meal Preference<br>
+        <input type="checkbox" id="special assistance" name="special assistance">Unaccompanied Minor<br>
+
+        <br><br>
+
+        <label for="passport">Upload ID / Passport</label>
+        <input type="file" id="passport" name="passport" accept=".jpg,.png,.pdf" required>
+
+        <label for="profile">Travel Profile(URL)</label>
+        <input type="url" id="profile" name="profile" placeholder="https://example.com">
+
+        <label for="search flight">Search Flight</label>
+        <input type="search" id="search flight" name="search flight" placeholder="Search Flight...">
+
+        <label for="range">Preferred Price Range</label>
+        <input type="range" id="range" name="range" min="0" max="50000" step="1000" value="25000">
+
+        <label for="fav color">Favorite Color</label>
+        <input type="color" id="color" name="color" value="#2196f3">
+
+        <br><br>
+
+        <legend >2. Travel Details </legend>
+        <label for="from">From(City)*</label>
+        <input type="list" id="from" name="from" list="fromcity" required>
+        <datalist id="fromcity">
+            <option value="Hyderabad">
+            <option value="Mumbai">
+            <option value="Delhi">
+            <option value="Bangalore">
+            <option value="Chennai">
+            <option value="others">Other</option>
+        </datalist>
+
+        <label for="to">To(City)*</label>
+        <input type="list" id="to" name="to" list="tocity" required>
+        <datalist id="tocity">
+            <option value="Hyderabad">
+            <option value="Mumbai">
+            <option value="Delhi">
+            <option value="Bangalore">
+            <option value="Chennai">
+            <option value="others">Other</option>
+        </datalist>
+        
+        <label for="departure">Departure Date*</label>
+        <input type="date" id="departure" name="departure" required>
+
+        <label for="TIME">Departure Time*</label>
+        <input type="time" id="TIME" name="TIME" required><br><br>
+
+        <label for="travel class">Travel Class*</label>
+        <select id="travel class" name="travel class" required>
+            <option value="">Select Class</option>
+            <option value="Economy">Economy</option>
+            <option value="Business">Business</option>
+            <option value="First Class">First Class</option>
+        </select>
+
+        <label for="airline">Airline*</label>
+        <select id="airline" name="airline" required>
+            <option value="">Select Airline</option>
+            <option value="IndiGo">IndiGo</option>
+            <option value="Air India">Air India</option>
+            <option value="SpiceJet">SpiceJet</option>
+            <option value="Vistara">Vistara</option>
+            <option value="GoAir">GoAir</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="passengers">Number of Passengers*</label>
+        <input type="number" id="passengers" name="passengers" min="1" max="16" value="1" required>
+
+        <label for="meal">Meal Preference</label>
+        <select id="meal" name="meal">
+            <option value="">Select Meal</option>
+            <option value="Veg Meals">Veg</option>
+            <option value="Non-Veg Meals">Non-Veg</option>
+            <option value="Vegan Meals">Vegan</option>
+            <option value="Gluten-Free Meals">Gluten-Free</option>
+            <option value="Jain Food">Jain</option>
+        </select>
+
+        <label for="seating">Preferred Seat Type</label>
+        <input type="checkbox" id="seating" name="seating" value="Aisle">Aisle
+        <input type="checkbox" id="seating" name="seating" value="Window">Window
+        <input type="checkbox" id="seating" name="seating" value="Middle">Middle 
+        
+        <br><br>
+
+        <legend>3. additional Information </legend>
+        <label for="request">Any Special Requests</label>
+        <textarea id="request" name="request" rows="3" maxlength="200" placeholder="Enter your special requests here..."></textarea>
+<br>
+        <label for="offers">Subscribe to Offers</label>
+        <input type="checkbox" id="offers" name="offers" value="Yes">Yes, I want to receive offers and updates
+
+        <label for="comments">How did you hear about us?</label>
+        <select id="comments" name="comments">
+            <option value="">Select an option</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Friends/Family">Friends/Family</option>
+            <option value="Online Advertisement">Online Advertisement</option>
+            <option value="Creators">Creators</option>
+            <option value="Colabs">Colabs</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="T & C">Terms and Conditions*</label>
+        <input type="checkbox" id="T & C" name="T & C" required>I agree to the terms and conditions<br><br>
+
+
+        <label for="booking id">Booking ID</label>
+        <input type=text type="hidden" id="booking id" name="booking id" placeholder="HKP123456789" value=""><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="Cancle">
+
+
+
+
+
+
+    </form>
+
+</body>
+</html>

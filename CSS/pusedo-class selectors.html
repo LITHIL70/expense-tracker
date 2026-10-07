@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*pseudo-class selectors*/
+
+        /* hover effect */
+        button:hover {
+            background-color: lightblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* first-child pseudo-class */
+        li:first-child {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* last-child pseudo-class */
+        li:last-child {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* nth-child pseudo-class even */
+        li:nth-child(even) {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+          /* nth-child pseudo-class odd */
+        li:nth-child(odd) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        /*first-of-type pseudo-class */
+        p:first-of-type {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /*last-of-type pseudo-class */
+        p:last-of-type {    
+            color: rgb(91, 5, 250);
+            font-weight: bold;
+            font-size: 20px;
+        }   
+
+        /*nth-of-type pseudo-class  */
+        p:nth-of-type(4) {
+            font-style: times;
+            text-decoration: underline;
+            background-color: lightgreen;
+        }
+
+        /*nth-of-type pseudo-class  */
+        p:nth-of-type(2) {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        /*checked pseudo-class */
+        input[type="checkbox"]:checked + label {
+            color: green;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Class Selectors</h1>
+    <h2>Hover Effect</h2>
+    <button>Hover over me</button>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ul>
+
+    <h1>paragraph</h1>
+    
+    <p>para 1</p>
+    <p>para 2</p>
+    <p>para 3</p>
+    <p>para 4</p>
+
+    <h3>Checked Example</h3>
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">Apply</label>
+</body>
+</html>

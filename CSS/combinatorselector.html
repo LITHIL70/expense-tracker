@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Combinator selectors */
+
+
+        /*Descendant combinator selector*/
+        div p {
+            background-color: yellow;
+        }/* used to select elements that are descendants of a specified element. It selects all the elements that are nested within the specified element, regardless of their depth in the hierarchy. */
+
+        /*direct Child combinator selector*/
+        div > h1 {
+            color: blue;
+            background-color: lightgray;
+        }/* used to select elements that are direct children of a specified element. It selects only the immediate child elements, not all descendants. */
+
+
+        /*Adjacent sibling combinator selector*/
+        h1 + p {
+            font-weight: bold;
+            font-size: 40px;
+        }/* used to select an element that is immediately preceded by a specified element. It selects the first sibling that comes after the specified element in the document tree. */
+
+        /*General sibling combinator selector*/
+        h1 ~ p {
+            text-decoration: underline;
+        }/* used to select all the siblings of an element that share the same parent and come after it in the document tree. */
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Combinator Selectors</h1>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        <section>
+            <p>This is another paragraph inside a section.</p>
+        </section>
+    </div>
+        
+</body>
+</html>

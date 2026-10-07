@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and values of Input Tags</title>
+    <link rel="stylesheet" href="../CSS/ATTRIBUTES N VALUES TAGS.css">
+</head>
+
+<body>
+    <h1>Attributes and values of Input Tags</h1>
+    <h2>Students registration form </h2>
+    <!--type, id, name, value, required, placeholder, etc.-->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name=" Student name" placeholder="Enter your name" required autofocus><br><br>
+
+    <!--email-->
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!--password-->
+    <label for="password">password:</label>
+    <input type="password" name="password" placeholder="Enter your password" required><br><br>
+
+    <!min, max, step, value, required-->
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="18" max="32" step="1" value="20" required><br><br>
+
+        <!--TEL -->
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" placeholder=" 10 digit mobile no" required><br><br>
+
+        <!--radio buttons-->
+        <label for="Gender">Gender:</label>
+        <Input name="gender" type="radio" value="male" required>Male
+        <input type="radio" name="gender" value="female" required>Female<br><br>
+
+        <!--checkbox-->
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" value="JavaScript">JavaScript
+        <input type="checkbox" name="skills" value="Python">Python
+        <input type="checkbox" name="skills" value="react js">React JS
+        <input type="checkbox" name="skills" value="Node js">Node JS<br><br>
+        <input type="others" name="skills" value="" placeholder="Specify other skills!"><br><br>
+
+        <!--date-->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required><br><br>
+
+        <!--TIME-->
+        <LABEL>Preferred Time: </LABEL>
+        <input type="time" name="time" value="current time" required><br><br>
+
+        <!--submit button-->
+        <input type="submit" value="submit"><BR><BR>
+
+        <!--colour-->
+        <label for="color">Favorite Color:</label>
+        <input type="color" name="color" value="#000000" required><br><br>
+
+        <!--range -->
+        <label for="volume">Skill Level:</label>
+        <input type="range" name="volume" min="0" max="100" value="50" required><br><br>
+
+        <!--search-->
+        <label for="search">Search:</label>
+        <input type="search" name="search" placeholder="Search..." required><br><br>
+
+        <!--readonly-->
+        <label for="readonly">Read only:</label>
+        <input type="text" name="readonly" value="Python Full Stack" readonly><br><br>
+
+        <!--disabled-->
+        <label for="disabled">Morning Batch:</label>
+        <input type="text" name="disabled" value="Morning Batch" disabled><br><br>
+
+        <!--autofocus-->
+        <label for="autofocus">Cities:</label>
+        <input type="text" name="autofocus" placeholder="This will be focused automatically" autofocus><br><br>
+
+        <!-- datalist using list attribute-->
+        <label for="cities">Cities:</label>
+        <input type="text" name="cities" list="citylist" placeholder="Enter your city">
+        <datalist id="citylist">
+            <option value="New York">
+            <option value="Los Angeles">
+            <option value="Chicago">
+            <option value="mumbai">
+            <option value="hyderabad">
+        </datalist>
+        <br><br>
+
+        <!--file input-->
+        <label for="file">Upload your resume:</label>
+        <input type="file" name="file" accept="pdf, doc, jpg">
+
+        <!--multiple file input-->
+        <label for="files">Upload multiple files:</label>
+        <input type="file" name="files" multiple>
+
+        <!--image input-->
+        <label for="image">institute image:</label>
+        <input type="image" name="image" src="./Screenshot 2026-08-20 211135.png" alt="profile pic"
+        width="10"><br><br>
+
+</body>
+
+</html>
+<a href="FORM%20TAGS.html">Click here to see the form tags</a>

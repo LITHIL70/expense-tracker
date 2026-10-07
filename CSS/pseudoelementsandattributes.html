@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     
+        /* first-letter pseudo-element */
+        p::first-letter {
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        /*first-line pseudo-element */
+        p::first-line {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /*before pseudo-element */
+        h1::before {
+            content: ">> ";
+            color: green;
+            font-weight: bold;
+        }
+
+        /*after pseudo-element */
+        h1::after {
+            content: " <<";
+            color: green;
+            font-weight: bold;
+        }
+
+        /*marker pseudo-element */
+        li::marker {
+            color: orange;
+            font-size: 40px;
+        }
+
+        /*Attribute selectors*/
+
+        /* attribute selector  using type*/
+        input[type]
+        {
+            background-color: lightblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* attribute selector  using type and value*/
+        input[type="text"]
+        {
+            background-color: lightgreen;
+            color: white;
+            font-weight: bold;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements and Attributes</h1>
+    <p>This pseudo elements and attributes target specific parts of the elements based on their state or position.</p>
+
+    <h2>Pseudo-Elements using ul</h2>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    
+    <h2>Pseudo-Elements using form</h2>
+
+    <form>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+        <input type="submit" value="Proceed">
+    </form>
+</body>
+</html>

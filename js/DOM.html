@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .head{
+            color: rgb(236, 134, 10);
+            background-color: rgb(200, 200, 222);
+            border: 1px solid black;
+        }
+
+        .try{
+            padding-top: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class=head id="head">DOM MANIPULATION</h1>
+    <button onclick="changeText()">click to change text</button>
+
+    <h1 id="counter" class="counter">0</h1>
+    <button onclick="changeInt()">+</button>
+    <button onclick="decriment()">-</button>
+
+
+    <div class="try" id="try">
+    <button onclick="addHtml()">Show Results</button>
+    </div>
+
+
+    <script>
+
+        function changeText(){
+            let change=document.getElementById("head");
+
+            change.innerText="hello world";
+        }
+
+        function changeInt(){
+            let num=document.getElementById("counter");
+            let val=parseInt(num.innerText);
+
+            num.innerText=val+1;
+        }
+
+        function decriment(){
+            let num=document.getElementById("counter");
+            let val=parseInt(num.innerText);
+            num.innerText=val-1;
+        }
+
+        function addHtml(){
+            let add=document.getElementById("try");
+            add.innerHTML="<h1><b>Pass</b></h1>";
+
+
+        }
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

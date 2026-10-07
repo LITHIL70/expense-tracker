@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>30 JAVA SCRIPT QUESTIONS></h1> 
+
+
+
+
+
+
+
+
+
+    <script>
+//         30 JavaScript Practice Questions
+// Beginner
+// Positive or Negative
+// Take a number and check whether it is positive or negative.
+
+// Zero or Non-Zero
+// Take a number and check whether it is zero or non-zero.
+
+// Divisible by 5
+// Take a number and check whether it is divisible by 5.
+
+// Divisible by 3 and 5
+// Take a number and check whether it is divisible by both 3 and 5.
+
+// Greater of Two Numbers
+// Take two numbers and print which number is greater.
+
+// Smaller of Two Numbers
+// Take two numbers and print which number is smaller.
+
+// Equal or Not Equal
+// Take two numbers and check whether they are equal.
+
+// Voting Eligibility
+// Take a person's age and check whether they are eligible to vote. Assume the minimum age is 18.
+
+// Driving Eligibility
+// Take a person's age and check whether they are eligible to get a driving license. Assume the minimum age is 18.
+
+// Pass or Fail
+// Take a student's marks and print "Pass" if marks are 40 or above; otherwise print "Fail".
+
+// Intermediate
+// Largest of Three Numbers
+// Take three numbers and find the largest number.
+
+// Smallest of Three Numbers
+// Take three numbers and find the smallest number.
+
+// Positive Even or Positive Odd
+// Take a number. If it is positive, determine whether it is even or odd. If it is negative, print "Negative".
+
+// Multiple of 10
+// Take a number and check whether it is a multiple of 10.
+
+// Divisible by 2 or 3
+// Take a number and check whether it is divisible by 2 or 3.
+
+// Divisible by 2 but Not 3
+// Take a number and check whether it is divisible by 2 but not by 3.
+
+// Temperature Check
+// Take a temperature:
+
+// Below 20 → "Cold"
+
+// 20–30 → "Normal"
+
+// Above 30 → "Hot"
+
+// Grade Calculator
+// Take marks and print:
+
+// 90–100 → A
+
+// 75–89 → B
+
+// 60–74 → C
+
+// 40–59 → D
+
+// Below 40 → F
+
+// Age Category
+// Take age and print:
+
+// 0–12 → "Child"
+
+// 13–19 → "Teenager"
+
+// 20–59 → "Adult"
+
+// 60+ → "Senior"
+
+// Number Range
+// Take a number and check whether it is between 10 and 50 inclusive.
+
+// More Logic Practice
+// Leap Year
+// Take a year and determine whether it is a leap year.
+// Hint: A year is a leap year if it is divisible by 400, or divisible by 4 but not by 100.
+
+// Three-Digit Number
+// Take a number and check whether it is a three-digit number.
+
+// Last Digit Even or Odd
+// Take a number and determine whether its last digit is even or odd.
+
+// Last Digit 5 or 0
+// Take a number and check whether its last digit is either 5 or 0.
+
+// Character Vowel or Consonant
+// Take a single character and check whether it is a vowel (a, e, i, o, u) or consonant.
+
+// Uppercase or Lowercase
+// Take a single character and determine whether it is uppercase or lowercase.
+// Hint: You can compare the character with 'A', 'Z', 'a', and 'z'.
+
+// Simple Calculator
+// Take two numbers and an operator (+, -, *, /). Perform the corresponding operation using if/else or switch.
+
+// Triangle Validity
+// Take three angles and check whether they can form a valid triangle.
+// Hint: The sum of all three angles must be 180.
+
+// Triangle Type
+// Take three sides of a triangle and determine whether it is:
+
+// Equilateral
+
+// Isosceles
+
+// Scalene
+
+// Electricity Bill Slab
+// Take the number of units consumed and calculate the bill:
+
+// 0–100 units → ₹5 per unit
+
+// 101–200 units → ₹7 per unit
+
+// Above 200 units → ₹10 per unit
+
+
+let n=-40
+
+if(n>0){
+    console.log("it is a positive number");
+}
+
+else if(n<0){
+    console.log("n is a negative no");
+}
+
+else{
+    console.log("zero")
+}
+
+
+
+
+    let a=8
+
+if (a==0){
+    console.log("Zero");
+}
+
+else if(a!=0){
+    console.log("Non-Zero")
+}
+
+
+
+    let num = 6;
+
+if (num % 5 === 0) {
+    console.log("Divisible by 5");
+} else {
+    console.log("Not divisible by 5");
+}
+
+
+
+    let number= 15;
+
+if (num % 3 === 0 && num % 5 === 0){
+console.log("Divisible by 3&5")
+} else{
+    console.log("Not divisible by 3&5")
+}
+
+
+{
+    let a=30;
+    let b=40;
+
+    if(a>b){
+        console.log("a is greater");
+    } else if(b>a){
+        console.log("b is greater")
+
+    } else{
+        console.log("Both are equal")
+    }
+}
+
+{
+    let a=30;
+    let b=40;
+
+    if(a<b){
+        console.log("a is smaller");
+    } else if(b<a){
+        console.log("b is smaller")
+
+    } else{
+        console.log("Both are equal")
+    }
+}
+
+{
+    let a=10;
+    let b=10;
+
+    if(a = b){
+        console.log("both are equal");
+    } else{
+        console.log("Not equal")
+    }
+}
+
+{
+    let age=20;
+
+    if (age >= 18){
+        console.log("eligible")
+    } else{
+        console.log("Not elegible")
+    }
+}
+
+{
+    let age=17;
+
+    if(age >= 18){
+        console.log("eligible")
+    } else{
+        console.log("Not elegible")
+    }
+}
+
+{
+    let marks=80;
+
+    if(marks >=40){
+        console.log("pass")
+    } else{
+        console.log("fail")
+    }
+}
+
+{
+    let a=10;
+    let b=30;
+    let c=40;
+
+    if (a >= b && a>= c){
+        console.log("a is greater")
+    } else if(b>=a && b>=c){
+        console.log("b is greater")
+    } else if(c>=a && c>=b){
+        console.log("c is greater")
+
+    } else{
+        console.log("Error")
+    }
+}
+
+
+{
+    let a=10;
+    let b=30;
+    let c=40;
+
+    if (a >= b && a>= c){
+        console.log("a is smallest")
+    } else if(b>=a && b>=c){
+        console.log("b is smallest")
+    } else if(c>=a && c>=b){
+        console.log("c is smallest")
+
+    } else{
+        console.log("Error")
+    }
+}
+
+{
+    let num=-7;
+
+    if (num > 0){
+        if (num % 2 == 0){
+            console.log("positive even")
+        } else {
+            console.log("positive odd")
+        }
+
+    } else if (num < 0) {
+        if (num % 2 == 0) {
+            console.log("negative even")
+        } else {
+            console.log("negative odd")
+        }
+    }
+
+}
+
+{
+    let num=50;
+
+    if(num % 10 == 0){
+        console.log("multiple of 10");
+    } else{
+        console.log("Not a multiple of zero")
+    }
+}
+
+{
+    //divisible of 2 or 3
+
+    let num=15;
+
+    if (num % 2 ==0 || num%3==0){
+        console.log("divisible by 2 or 3")
+    }else{
+        console.log("not divisible by 2 or 3")
+    }
+}
+
+{
+    //divisible of 2 but not 3
+
+    let num=15;
+
+    if (num % 2 ==0 && num%3!=0){
+        console.log("divisible by 2 not 3")
+    }else{
+        console.log("condition not statisfied")
+    }
+}
+
+{
+    let temp=35;
+
+    if (temp< 20){
+        console.log("cold")
+    } else if (temp <= 30){
+        console.log("normal")
+    }else{
+        console.log("hot")
+    }
+
+
+}
+
+{
+    let marks=90;
+
+    if(marks >=95 && marks <=100){
+        consol.log("A+");
+    } else if(marks >= 90){
+        console.log("A");
+    } else if (marks >= 85) {
+        console.log("B+");
+    } else if (marks >= 75) {
+        console.log("B");
+    } else if (marks >= 60) {
+        console.log("C+");
+    } else if (marks >= 50) {
+        console.log("c");
+    } else if (marks >= 40) {
+        console.log("d");
+    } else {
+            console.log("F");
+        }
+}
+
+{
+    let age=90;
+
+    if(age >=90 && age <=100){
+        console.log("senior");
+    } else if(age <= 59){
+        console.log("Adult")
+    } else if(age<=19){
+        console.log("Teenager")
+    } else if(age>=0 && age <=12){
+        console.log("Child")
+    }
+}
+
+{
+    let num=90;
+
+    if(num >=61 && num <=100){
+        console.log("number is btw 60 & 100");
+    } else if(num <= 60 && num >=0){
+        console.log("number is btw 0 & 60")
+    } 
+}
+
+{
+    let year=2026;
+
+    if(year %400 ===0 || (year % 4 === 0 && year % 100 !== 0) ){
+        console.log("leap year");
+    } else{
+        console.log("Not a leap year")
+    }
+}
+
+{
+    let num=333;
+
+    if(num >= 100 && num<=999){
+        console.log("three digit number")
+
+    } else{
+        console.log("Not a three-digit number")
+    }
+}
+
+
+{
+    let num = 127;
+
+let lastDigit = Math.abs(num) % 10;
+
+if (lastDigit % 2 === 0) {
+    console.log("Last digit is Even");
+} else {
+    console.log("Last digit is Odd");
+}
+
+}
+
+{
+    let num = 125;
+
+let lastDigit = Math.abs(num) % 10;
+
+if (lastDigit  === 0 || lastDigit === 5) {
+    console.log("Last digit is 5 or 0");
+} else {
+    console.log("Last digit is neither 5 or 0");
+}
+}
+
+{let ch = "a";
+ch = ch.toUpperCase();
+
+if (
+    ch === "A" ||
+    ch === "e" ||
+    ch === "i" ||
+    ch === "o" ||
+    ch === "u"
+) {
+    console.log("Vowel");
+} else {
+    console.log("Consonant");
+}
+}
+
+{
+    let ch="H";
+
+    if(ch>="A" && ch<="Z"){
+        console.log("uppercase");
+    } else if(ch>="a"  && ch<="z"){
+        console.log("Lowercase")
+    }else{
+        console.log("not a char")
+    }
+}
+
+{
+let angle1 = 90;
+let angle2 = 90;
+let angle3 = 90;
+
+if (angle1 > 0 && angle2 > 0 && angle3 > 0 &&
+    angle1 + angle2 + angle3 === 270) {
+    console.log("Valid Triangle");
+} else {
+    console.log("Invalid Triangle");
+}
+
+}
+
+{let a = 5;
+let b = 5;
+let c = 5;
+
+if (a === b && b === c) {
+    console.log("Equilateral");
+} else if (a === b || b === c || a === c) {
+    console.log("Isosceles");
+} else {
+    console.log("Scalene");
+}
+
+}
+
+let units = 155;
+let bill;
+
+if (units <= 100) {
+    bill = units * 5;
+} else if (units <= 200) {
+    bill = (100 * 5) + ((units - 100) * 7);
+} else {
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10);
+}
+
+console.log("Electricity Bill = ₹" + bill);
+    </script>
+</body>
+</html>
